@@ -1,7 +1,7 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
 import styled from 'styled-components'
-import { HigherOrderComponent, CustomHooks, CompoundComponents } from './patterns'
+import { HigherOrderComponent, CustomHooks, CompoundComponents, ReusableStyles } from './patterns'
 
 const StyledContainer = styled.div`
   background: #191921;
@@ -34,6 +34,10 @@ function App () {
       <h2>Compound Components</h2>
       <Box>
         <CompoundComponents />
+      </Box>
+      <h2>Reusable Styles</h2>
+      <Box>
+        <ReusableStyles />
       </Box>
     </StyledContainer>
   )
