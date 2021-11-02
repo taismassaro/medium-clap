@@ -1,7 +1,7 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
 import styled from 'styled-components'
-import { HigherOrderComponent } from './patterns'
+import { HigherOrderComponent, CustomHooks } from './patterns'
 
 const StyledContainer = styled.div`
   background: #191921;
@@ -26,6 +26,10 @@ function App () {
       <h2>Higher Order Component</h2>
       <Box>
         <HigherOrderComponent />
+      </Box>
+      <h2>Custom hooks</h2>
+      <Box>
+        <CustomHooks />
       </Box>
     </StyledContainer>
   )
